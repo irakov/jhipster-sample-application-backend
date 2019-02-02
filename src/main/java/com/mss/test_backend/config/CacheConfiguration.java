@@ -38,6 +38,10 @@ public class CacheConfiguration {
             cm.createCache(com.mss.test_backend.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.mss.test_backend.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.mss.test_backend.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.mss.test_backend.domain.Symptom.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mss.test_backend.domain.Patient.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mss.test_backend.domain.Insurance.class.getName(), jcacheConfiguration);
+            cm.createCache(com.mss.test_backend.domain.Doctor.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
