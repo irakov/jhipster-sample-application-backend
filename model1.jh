@@ -1,0 +1,57 @@
+
+
+
+// an ignored comment
+/** not an ignored comment */
+
+
+entity Symptom {
+	name String required
+    severity Long required
+}
+
+/**
+ * The Account entity.
+ */
+entity Account {
+	/**
+	* The firstname attribute.
+	*/
+    userName String,
+	firstName String,
+	lastName String,
+	email String,
+	phoneNumber String,
+	dob String,
+	ssn String,
+    address Sting,
+    city String,
+    zip String,
+    state String,
+    insurance String,
+	doctor String
+}
+
+
+entity Insurance {
+	name String required,
+    address String 
+}
+
+entity Doctor {
+	firstName String required,
+    lastName String required,
+    speciality String required
+}
+
+
+
+
+
+
+
+// Set service options to all except few
+service all with serviceImpl 
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
